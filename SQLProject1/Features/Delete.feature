@@ -1,9 +1,12 @@
-﻿Feature: Delete
-	Simple calculator for adding two numbers
+﻿@delete
+Feature: Delete
+	In order to delete existing records in a table for DB
+	As a user
+	I want to be deleted existing records in a table for DB
 
-@mytag
-Scenario: Add two numbers
-	Given the first number is 50
+
+Scenario: It is possible to delete existing records in a table for DB
+	Given Connected to BD
 	And the second number is 70
 	When the two numbers are added
 	Then the result should be 120

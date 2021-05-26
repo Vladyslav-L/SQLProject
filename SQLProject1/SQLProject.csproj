@@ -15,4 +15,37 @@
     <PackageReference Include="System.Net.Security" Version="4.3.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Update="Features\Create.feature.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Create.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\Delete.feature.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Delete.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\Update.feature.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Update.feature</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Features\Create.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Create.feature.cs</LastGenOutput>
+    </None>
+    <None Update="Features\Delete.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Delete.feature.cs</LastGenOutput>
+    </None>
+    <None Update="Features\Update.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Update.feature.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
 </Project>

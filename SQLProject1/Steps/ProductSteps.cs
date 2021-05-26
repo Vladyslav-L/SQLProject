@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SQLProject.Steps
 {
-    class DeleteSteps
+    class ProductSteps
     {
     }
 }

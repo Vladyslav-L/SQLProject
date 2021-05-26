@@ -24,7 +24,7 @@ namespace SQLProject
         }
 
         [Test]
-        public void Test1()
+        public void CheckInsert()
         {
             _sqlHelper.Insert("Products",
                     new Dictionary<string, string> { { "Id", "1" }, { "Name", "'TestName'" }, { "Count", "44" } });
